@@ -2,11 +2,23 @@
 # Flavien PERIER <perier@flavien.cc>
 # Build pandoc files
 
-mkdir build 2>/dev/null
-
 LOGFILE=../debug.log
 DELETE_LOGFILE=1
 CREATEION_DATE=`date +"%Y-%m-%d"`
+
+mkdir -p build
+mkdir -p resources/style
+
+if [ ! -f ./resources/style/eisvogel.latex ]
+then
+	echo "Import eisvogel"
+	cd /tmp
+	git clone https://github.com/Wandmalfarbe/pandoc-latex-template.git
+	cd -
+
+	cp /tmp/pandoc-latex-template/eisvogel.tex ./resources/style/eisvogel.latex
+	rm -Rf /tmp/pandoc-latex-template/
+fi
 
 cd documents
 
