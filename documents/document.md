@@ -6,7 +6,7 @@ lang: "fr-FR"
 implicit_figures: true
 titlepage: true
 titlepage-rule-color: "5b95cf"
-logo: ./logo.png
+logo: ./resources/medias/logo.png
 toc: true
 toc-title: "Table des matières"
 toc-own-page: true

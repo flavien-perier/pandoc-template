@@ -2,7 +2,7 @@
 # Flavien PERIER <perier@flavien.cc>
 # Build pandoc files
 
-LOGFILE=../debug.log
+LOGFILE=./debug.log
 DELETE_LOGFILE=1
 CREATEION_DATE=`date +"%Y-%m-%d"`
 
@@ -20,19 +20,18 @@ then
 	rm -Rf /tmp/pandoc-latex-template/
 fi
 
-cd documents
-
 echo -e "Logs: $CREATEION_DATE\n" > `echo $LOGFILE`
 
-ls *.md | while read FILE
+for FILE in `ls ./documents/*.md | rev | cut -f1 -d / | rev`
 do
-	NBR_LINES=`cat $FILE | wc -c`
-	NBR_PAGES=`expr $NBR_LINES / 2250`
+	FILE_PATH="./documents/$FILE"
+	NBR_CHARACTERS=`cat $FILE_PATH | wc -c`
+	NBR_PAGES=`expr $NBR_CHARACTERS / 2250`
 	PDF_FILE_NAME=`echo $FILE | sed s/.md$/.pdf/`
 
 	echo "$FILE: $NBR_PAGES pages"
 	echo "$FILE" >> `echo $LOGFILE`
-	cat $FILE ../resources/annotations.md | pandoc --from markdown -o "../build/$PDF_FILE_NAME" --template "../resources/style/eisvogel.latex" --listings -N 2>>`echo $LOGFILE`
+	cat $FILE_PATH ./resources/annotations/*.md | sed "1i\\\n\n" | pandoc --from markdown -o "./build/$PDF_FILE_NAME" --template "./resources/style/eisvogel.latex" --listings -N 2>>`echo $LOGFILE`
 	if [ $? -eq 0 ]
 	then
 		echo -e "\t- [OK]"
@@ -43,10 +42,10 @@ do
 	echo -e "\n" >> `echo $LOGFILE`
 done
 
-if [ $DELETE_LOGFILE -eq 1 ]
+if [ $DELETE_LOGFILE -eq 0 ]
 then
-	rm $LOGFILE
 	exit 1
 fi
 
+rm $LOGFILE
 exit 0
