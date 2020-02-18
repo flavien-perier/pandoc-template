@@ -31,7 +31,7 @@ do
 
 	echo "$FILE: $NBR_PAGES pages"
 	echo "$FILE" >> `echo $LOGFILE`
-	cat $FILE_PATH ./resources/annotations/*.md | sed "1i\\\n\n" | pandoc --from markdown -o "./build/$PDF_FILE_NAME" --template "./resources/style/eisvogel.latex" --listings -N 2>>`echo $LOGFILE`
+	cat ./resources/annotations/*.md | sed "1i\\\n\n" | cat $FILE_PATH - | pandoc --from markdown -o "./build/$PDF_FILE_NAME" --template "./resources/style/eisvogel.latex" --listings -N 2>>`echo $LOGFILE`
 	if [ $? -eq 0 ]
 	then
 		echo -e "\t- [OK]"

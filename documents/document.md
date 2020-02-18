@@ -10,8 +10,13 @@ logo: ./resources/medias/logo.png
 toc: true
 toc-title: "Table des matières"
 toc-own-page: true
+lof: true
 ---
+
+\newpage
 
 # Default document
 
 Simple document POC[^POC].
+
+![Images](./resources/medias/logo.png)
