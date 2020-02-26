@@ -1,5 +1,5 @@
 #!/bin/bash
-# Flavien PERIER <perier@flavien.cc>
+# Flavien PERIER <perier@flavien.io>
 # Build pandoc files
 
 LOGFILE=./debug.log
