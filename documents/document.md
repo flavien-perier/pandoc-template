@@ -11,6 +11,7 @@ toc: true
 toc-title: "Table des matières"
 toc-own-page: true
 lof: true
+bibliography: ./resources/bibliography/document.bib
 ---
 
 \newpage
@@ -20,3 +21,7 @@ lof: true
 Simple document POC[^POC].
 
 ![Images](./resources/medias/logo.png)
+
+@item1 refer a document
+
+# References

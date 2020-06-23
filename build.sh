@@ -12,12 +12,13 @@ mkdir -p resources/style
 if [ ! -f ./resources/style/eisvogel.latex ]
 then
 	echo "Import eisvogel"
-	cd /tmp
-	git clone https://github.com/Wandmalfarbe/pandoc-latex-template.git
-	cd -
+	curl https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/master/eisvogel.tex > ./resources/style/eisvogel.latex
+fi
 
-	cp /tmp/pandoc-latex-template/eisvogel.tex ./resources/style/eisvogel.latex
-	rm -Rf /tmp/pandoc-latex-template/
+if [ ! -f ./resources/style/multiple-sclerosis-journal.csl ]
+then
+	echo "Import multiple-sclerosis-journal"
+	curl https://raw.githubusercontent.com/citation-style-language/styles/master/multiple-sclerosis-journal.csl > ./resources/style/multiple-sclerosis-journal.csl
 fi
 
 echo -e "Logs: $CREATEION_DATE\n" > `echo $LOGFILE`
@@ -31,7 +32,15 @@ do
 
 	echo "$FILE: $NBR_PAGES pages"
 	echo "$FILE" >> `echo $LOGFILE`
-	cat ./resources/annotations/*.md | sed "1i\\\n\n" | cat $FILE_PATH - | pandoc --from markdown -o "./build/$PDF_FILE_NAME" --template "./resources/style/eisvogel.latex" --listings -N 2>>`echo $LOGFILE`
+	cat ./resources/annotations/*.md | sed "1i\\\n\n" | cat $FILE_PATH - | pandoc \
+		--from markdown \
+		--standalone \
+		-o "./build/$PDF_FILE_NAME" \
+		--filter "pandoc-citeproc" \
+		--template "./resources/style/eisvogel.latex" \
+		--csl "./resources/style/multiple-sclerosis-journal.csl" \
+		--bibliography "./resources/bibliography/document.bib" \
+		2>>`echo $LOGFILE`
 	if [ $? -eq 0 ]
 	then
 		echo -e "\t- [OK]"

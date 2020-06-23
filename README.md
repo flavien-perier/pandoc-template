@@ -5,7 +5,7 @@
 - Debian
 
 ```sh
-apt-get install -y pandoc texlive-*
+apt-get install -y pandoc pandoc-citeproc texlive-*
 ```
 
 ## Usage
