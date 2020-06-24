@@ -39,6 +39,7 @@ do
 		--filter "pandoc-citeproc" \
 		--template "./resources/style/eisvogel.latex" \
 		--csl "./resources/style/multiple-sclerosis-journal.csl" \
+		--listings -N \
 		2>>`echo $LOGFILE`
 	if [ $? -eq 0 ]
 	then
