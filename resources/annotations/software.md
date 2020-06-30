@@ -1,5 +1,6 @@
 [^SQL]: Le SQL (Structured Query Language) est un langage permettant d'interroger des bases de données relationnelles.
 [^NOSQL]: Les bases de données NoSQL (Not Only SQL) sont des bases de données utilisant des schémas de données différents de ceux des bases de données relationnelles classiques. On trouve notamment parmi elles les bases de données graphe, clé-valeur, en colonne et document.
+[^MONGODB]: MongoDb est une base de données NoSQL orientée document.
 
 [^NEO4J]: Neo4J est une base de données NoSQL stockant les données sous forme de graph.
 [^SPARK]: Framework BigData permettant d'effectuer des traitements sur différentes sources de données.
@@ -10,5 +11,8 @@
 [^LDAP]: L'annuaire LDAP de l'entreprise Orange contient la liste de toutes les personnes travaillant au sein de l'entreprise avec leur profil.
 [^LEMON_LDAP]: LemonLdap est un SSO Open source. C'est par exemple lui qui est utilisé pour le système FranceConnect qui permet aux citoyens français de se connecter aux différentes administrations avec les mêmes identifiants.
 [^DOCKER]: Application permettant de manager des conteneurs.
+[^KUBERNETES]: Kubernetes est un orchestrateur de plateforme.
 
 [^JVM]: La JVM (Java Virtual Machine) permet d'exécuter une application Java.
+
+[^ACTIVEMQ]: ActiveMQ est une file de message asynchrone.
