@@ -4,6 +4,7 @@
 
 [^FRONT_END]: Le Front-end d'une application est la partie chargée de gérer l'affichage.
 [^BACK_END]: Le Back-end d'une application est la partie qui a pour responsabilité d'effectuer les traitements.
+[^POLLING]: Le Polling consiste à un client d'envoyer à interval de temps régulier des requêtes à un Backend afin de connaitre l'état d'avancement d'une tâche.
 
 [^SI]: Le SI (Système d'information) permet de stocker, traiter et mettre à disposition toute les informations métiers.
 [^IAAS]: Les plateformes IAAS (Infrastructure as a service) offrent à leurs utilisateurs des machines virtualiser dans le cloud sur lesquelles il est possible d'installer leurs différentes applications.
