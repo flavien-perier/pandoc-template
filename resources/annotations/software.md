@@ -3,7 +3,7 @@
 [^MONGODB]: MongoDb est une base de données NoSQL orientée document.
 
 [^NEO4J]: Neo4J est une base de données NoSQL stockant les données sous forme de graph.
-[^SPARK]: Framework BigData permettant d'effectuer des traitements sur différentes sources de données.
+[^SPARK]: Framework BigData permettant d'effectuer des traitements map-reduce sur différentes sources de données.
 [^NIFI]: Framework BigData de manipulation de flux de données.
 [^KAFKA]: Kafka est une file de messages asynchrones. Elle permet à plusieurs applications d'échanger des messages à travers le réseau.
 [^HDFS]: HDFS (Hadoop Distributed File System) est un système de fichier distribué permettant de stocker et traiter de très grands volumes de données.
