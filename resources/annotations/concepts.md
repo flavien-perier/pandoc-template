@@ -21,3 +21,5 @@
 [^TTS]: Les systèmes TTS (Text to Speech) permettent de lire du texte grâce à une voie de synthèse.
 [^CLUSTERING]: Le clustering est une famille d'algorithme capable de catégoriser de manière automatique des données.
 [^DATA-SCIENCE]: La Data Science, ou science des données, est une discipline ayant pour vocation d'extraire de l'information de banque de données. Pour cela, de nombreux algorithmes de machine learning et autres outils statistiques sont employés.
+
+[^DNS]: Un DNS (Domain Name System) est un composant réseau permettant de traduire les noms de domaines en adresses IP.
