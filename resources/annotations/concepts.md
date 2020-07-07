@@ -16,6 +16,7 @@
 
 [^SGBD]: Le sigle SGBD signifie: Système de Gestion de Base de données.
 [^ETL]: Les ETL (Extract Transform Load) sont des technologies permettant de synchroniser plusieurs bases de données entre elles.
+[^IHM]: Une IHM (Interface Homme-Machine) décrit la partie d'une application ayant pour rôle d'être utilisée directement par un être humain.
 
 [^STT]: Les systèmes STT (Speech to Text) permettent de transformer une source audio en texte.
 [^TTS]: Les systèmes TTS (Text to Speech) permettent de lire du texte grâce à une voie de synthèse.
