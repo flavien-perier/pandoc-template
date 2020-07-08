@@ -13,6 +13,7 @@
 [^DOCKER]: Application permettant de manager des conteneurs.
 [^KUBERNETES]: Kubernetes est un orchestrateur de plateforme.
 
+[^GIT]: GIT est un gestionnaire de source de code. Il permet notamment de travailler en équipe sur un même projet, ainsi que de garder l'historique de toutes les modifications qui ont été effectuées sur le code.
 [^GITLAB]: GitLab est une application proposant du versioning de code grâce à GIT, des fonctionnalités de déploiement continues continue grâce à GitLabCI ou encore de suivi de ticket grâce à son interface.
 
 [^JVM]: La JVM (Java Virtual Machine) permet d'exécuter une application Java.
