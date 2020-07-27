@@ -24,3 +24,4 @@
 [^DATA-SCIENCE]: La Data Science, ou science des données, est une discipline ayant pour vocation d'extraire de l'information de banque de données. Pour cela, de nombreux algorithmes de machine learning et autres outils statistiques sont employés.
 
 [^DNS]: Un DNS (Domain Name System) est un composant réseau permettant de traduire les noms de domaines en adresses IP.
+[^VPN]: Un VPN (Virtual Private Network) est un composant réseau permettant à plusieurs ordinateurs distants d'être sur un même réseau privé.
