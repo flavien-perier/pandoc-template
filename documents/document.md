@@ -23,6 +23,8 @@ nocite: |
 
 Simple document POC[^POC].
 
-![Images](./resources/medias/logo.png)
+![Image](./resources/medias/logo.png)
+
+\newpage
 
 # References
