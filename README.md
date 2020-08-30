@@ -1,4 +1,4 @@
-# Flavien Pandoc Template
+# Pandoc Template
 
 ## Installation
 
@@ -19,4 +19,5 @@ apt-get install -y pandoc pandoc-citeproc texlive-*
 ## References
 
 - Compiler: [Pandoc](https://pandoc.org/)
-- Style: [Eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template)
+- Pandoc template: [Eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template)
+- CSL: [Multiple Sclerosis Journal](https://github.com/citation-style-language/styles/blob/master/multiple-sclerosis-journal.csl)
