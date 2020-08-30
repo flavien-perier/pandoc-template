@@ -28,3 +28,4 @@
 [^VPN]: Un VPN (Virtual Private Network) est un composant réseau permettant à plusieurs ordinateurs distants d'être sur un même réseau privé.
 
 [^CALLBACK]: Une callback ou fonction de rappel, est une fonction envoyé lors d'une demande de traitement. Elle a pour vocation d'être appelé lorsque le dit traitement est terminé, ce qui permet au demandeur du traitement d'être informé de la fin de son exécution.
+[^TRIGGER]: Un trigger est une tache qui va s'exécuter à la réception d'un évènement.

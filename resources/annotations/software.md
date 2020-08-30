@@ -15,6 +15,7 @@
 
 [^GIT]: GIT est un gestionnaire de source de code. Il permet notamment de travailler en équipe sur un même projet, ainsi que de garder l'historique de toutes les modifications qui ont été effectuées sur le code.
 [^GITLAB]: GitLab est une application proposant du versioning de code grâce à GIT, des fonctionnalités de déploiement continu continue grâce à GitLabCI ou encore de suivi de ticket.
+[^GITHUB]: GitHub est un service web proposant du versioning de code grâce à GIT. Cette plateforme est très largement utilisée au sein des communautés OpenSource afin de mettre le code de leur application à disposition de tous. Il est néanmoins possible de grader son code privé.
 
 [^ANSIBLE]: Ansible est un logiciel permettant d'écrire des scripts afin d'automatiser la configuration de serveurs.
 
