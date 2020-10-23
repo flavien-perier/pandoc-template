@@ -1,3 +1,5 @@
+![license](https://badgen.net/github/license/flavien-perier/pandoc-template)
+
 # Pandoc Template
 
 ## Installation
