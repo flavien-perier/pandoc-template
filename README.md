@@ -10,6 +10,13 @@
 apt-get install -y pandoc pandoc-citeproc texlive-*
 ```
 
+- Arch
+
+```sh
+pacman -Syyu pandoc pandoc-citeproc
+pacman -Syyu `pacman -Ss texlive | cut -f 1 -d " " | grep -v "^$"`
+```
+
 ## Usage
 
 - Compile all Markdown files contained in the documents folder:
